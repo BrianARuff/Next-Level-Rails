@@ -6,7 +6,7 @@ describe 'Calculator App' do
     @calculator = Calculator.new(10,5)
   end
 
-  it 'creates a calculator object with 2 arguments in the initializer function' do
+  it 'creates a calculator object with 2 numbers in the initializer function' do
     expect(@calculator).to be_an_instance_of(Calculator)
     expect(@calculator.method(:initialize).arity).to eq(2)
   end
